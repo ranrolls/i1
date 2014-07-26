@@ -1,0 +1,13 @@
+<layout version="0.1.0">
+<reference name="root">
+    <block type="catalog/product_new" name="footer_before" template="catalog/product/brands.phtml" after="cms_page">
+        <action method="setProductsCount"><count>6</count></action>
+        <action method="addPriceBlockType">
+            <type>bundle</type>
+            <block>bundle/catalog_product_price</block>
+            <template>bundle/catalog/product/price.phtml</template>
+        </action>
+        <action method="setColumnCount"><count>6</count></action>
+    </block>
+</reference>
+</layout> 

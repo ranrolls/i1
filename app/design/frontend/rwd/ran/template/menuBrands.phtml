@@ -1,0 +1,17 @@
+// cookware id = 4, appliances = 5, brands = 166
+// kitchenAccessories = 6, dinning = 7, 
+// kitchen storage = 8, Hotelware = 9, gifting = 41
+// $all_brands = $this->getCatBrands();
+echo '<br /><br /><br />';
+echo '<div id="products-4">';
+	$all_brands = $this->getCatBrands();
+	foreach($all_brands as $p){
+		//var_dump($p["entity_id"]);
+		var_dump($p);
+		echo '<br /><br /><br />';	
+	}
+		//var_dump(count($all_brands));
+echo '</div>';
+/*
+		array(56) { ["entity_id"]=> string(3) "231" ["entity_type_id"]=> string(1) "4" ["attribute_set_id"]=> string(2) "13" ["type_id"]=> string(6) "simple" ["sku"]=> string(6) "msj000" ["has_options"]=> string(1) "0" ["required_options"]=> string(1) "0" ["created_at"]=> string(19) "2013-03-05 11:18:12" ["updated_at"]=> string(19) "2013-03-05 13:57:15" ["status"]=> string(1) "1" ["custom_design_from"]=> NULL ["custom_design_to"]=> NULL ["news_from_date"]=> NULL ["news_to_date"]=> NULL ["special_from_date"]=> NULL ["special_to_date"]=> NULL ["color"]=> string(2) "22" ["occasion"]=> string(2) "30" ["apparel_type"]=> string(2) "41" ["style"]=> NULL ["sleeve_length"]=> string(2) "47" ["fit"]=> string(2) "51" ["size"]=> string(2) "80" ["length"]=> NULL ["gender"]=> string(2) "93" ["visibility"]=> string(1) "1" ["tax_class_id"]=> string(1) "2" ["gift_wrapping_price"]=> NULL ["weight"]=> string(6) "1.0000" ["price"]=> string(8) "190.0000" ["special_price"]=> NULL ["msrp"]=> NULL ["description"]=> string(71) "Button front. Long sleeves. Tapered collar, chest pocket, french cuffs." ["meta_keyword"]=> NULL ["short_description"]=> string(126) "Made with wrinkle resistant cotton twill, this French-cuffed luxury dress shirt is perfect for Business Class frequent flyers." ["custom_layout_update"]=> NULL ["name"]=> string(31) "French Cuff Cotton Twill Oxford" ["meta_title"]=> NULL ["image"]=> string(18) "/m/s/msj000t_1.jpg" ["custom_design"]=> NULL ["gift_message_available"]=> NULL ["small_image"]=> string(18) "/m/s/msj000t_1.jpg" ["gift_wrapping_available"]=> NULL ["meta_description"]=> NULL ["thumbnail"]=> string(18) "/m/s/msj000t_1.jpg" ["media_gallery"]=> NULL ["gallery"]=> NULL ["page_layout"]=> string(10) "one_column" ["options_container"]=> string(10) "container1" ["url_key"]=> string(31) "french-cuff-cotton-twill-oxford" ["country_of_manufacture"]=> NULL ["msrp_enabled"]=> string(1) "2" ["msrp_display_actual_price_type"]=> string(1) "4" ["url_path"]=> string(36) "french-cuff-cotton-twill-oxford.html" ["is_salable"]=> string(1) "1" ["stock_item"]=> object(Varien_Object)#1564 (7) { ["_data":protected]=> array(1) { ["is_in_stock"]=> string(1) "1" } ["_hasDataChanges":protected]=> bool(false) ["_origData":protected]=> NULL ["_idFieldName":protected]=> NULL ["_isDeleted":protected]=> bool(false) ["_oldFieldsMap":protected]=> array(0) { } ["_syncFieldsMap":protected]=> array(0) { } } }
+		*/

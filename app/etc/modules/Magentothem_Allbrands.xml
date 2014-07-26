@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magentothem_Allbrands>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Magentothem_Allbrands>
+    </modules>
+</config> 

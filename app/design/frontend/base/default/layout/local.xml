@@ -1,0 +1,7 @@
+<layout version="0.1.0">
+    <default>
+        <reference name="custom_footer">
+            <block type="page/html" name="custom_footer" output="toHtml" template="page/template/custom_footer.phtml" />
+        </reference>
+    </default>
+</layout> 

@@ -1,0 +1,79 @@
+
+<?php 
+// echo $this->test().' from Allbrands.php<br />'; 
+echo '<div id="all-brands">';
+
+$all_brands = $this->getAllSubcat();
+if(count($all_brands) > 1){
+?>
+<div class="brand">
+<marquee id="marquee1" direction="left"  scrollamount='18' onmouseover='stop()' ; onmouseout='start();' scrollamount='20'  scrolldelay=10 behavior="alternate">
+	<div class="slide">
+    <?php
+	$defaultImg = $all_brands[0][1];
+	foreach($all_brands as $a){
+		if(strstr($a[1],'.jpg')){
+			echo '<a href="'.$a[2].'"><img src="'.$a[1].'" alt="'.$a[0].' - '.$a[3].'" /></a>';
+		}
+	}
+//var_dump($all_brands);
+//echo '<br /><br />';
+// var_dump($urlOut);
+echo '</div></Marquee></div>';
+}
+echo '</div><!-- all-brands-end -->';
+?>
+
+<!--
+<div class="brand">
+<marquee id="marquee1" direction="left"  scrollamount='16' onmouseover='stop()' ; onmouseout='start();' scrollamount='18'  scrolldelay=10 behavior="alternate">
+	<div class="slide">
+
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/action.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+<a href="{{config path="web/secure/base_url"}}women.html"><img src="{{media url="brand/airan.jpg"}}" alt="Style solutions - covet-worthy styles in travel-friendly fabrics - Click to Shop Woman" /></a>
+<a href="{{config path="web/secure/base_url"}}men.html"><img src="{{media url="brand/amarjyoti.jpg"}}" alt="Wing man - hit the runway in stylish separates and casuals - Click to Shop Man" /></a>
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/kanak.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/mayur.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+
+<a href="{{config path="web/secure/base_url"}}women.html"><img src="{{media url="brand/wilson.jpg"}}" alt="Style solutions - covet-worthy styles in travel-friendly fabrics - Click to Shop Woman" /></a>
+<a href="{{config path="web/secure/base_url"}}men.html"><img src="{{media url="brand/vishal.jpg"}}" alt="Wing man - hit the runway in stylish separates and casuals - Click to Shop Man" /></a>
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/united.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/sumocookware.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/anupam.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+<a href="{{config path="web/secure/base_url"}}women.html"><img src="{{media url="brand/chakmak.jpg"}}" alt="Style solutions - covet-worthy styles in travel-friendly fabrics - Click to Shop Woman" /></a>
+<a href="{{config path="web/secure/base_url"}}men.html"><img src="{{media url="brand/cielo.jpg"}}" alt="Wing man - hit the runway in stylish separates and casuals - Click to Shop Man" /></a>
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/mazda.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/mili.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+
+
+<a href="{{config path="web/secure/base_url"}}women.html"><img src="{{media url="brand/steelcraft.jpg"}}" alt="Style solutions - covet-worthy styles in travel-friendly fabrics - Click to Shop Woman" /></a>
+<a href="{{config path="web/secure/base_url"}}men.html"><img src="{{media url="brand/skyline.jpg"}}" alt="Wing man - hit the runway in stylish separates and casuals - Click to Shop Man" /></a>
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/shibu.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/sawan.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/dhara.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+<a href="{{config path="web/secure/base_url"}}women.html"><img src="{{media url="brand/dolphin.jpg"}}" alt="Style solutions - covet-worthy styles in travel-friendly fabrics - Click to Shop Woman" /></a>
+<a href="{{config path="web/secure/base_url"}}men.html"><img src="{{media url="brand/elephant.jpg"}}" alt="Wing man - hit the runway in stylish separates and casuals - Click to Shop Man" /></a>
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/milton.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/Monett.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+
+<a href="{{config path="web/secure/base_url"}}women.html"><img src="{{media url="brand/sagar-steel.jpg"}}" alt="Style solutions - covet-worthy styles in travel-friendly fabrics - Click to Shop Woman" /></a>
+<a href="{{config path="web/secure/base_url"}}men.html"><img src="{{media url="brand/sagar.jpg"}}" alt="Wing man - hit the runway in stylish separates and casuals - Click to Shop Man" /></a>
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/rajlaxmi.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/pureit.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+
+
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/padmini-essentia.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+<a href="{{config path="web/secure/base_url"}}women.html"><img src="{{media url="brand/padmini.jpg"}}" alt="Style solutions - covet-worthy styles in travel-friendly fabrics - Click to Shop Woman" /></a>
+<a href="{{config path="web/secure/base_url"}}men.html"><img src="{{media url="brand/Philco.jpg"}}" alt="Wing man - hit the runway in stylish separates and casuals - Click to Shop Man" /></a>
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/Prestige Logo.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+<a href="{{config path="web/secure/base_url"}}accessories/eyewear.html"><img src="{{media url="brand/princeware.jpg"}}" alt="An eye for detail - Click to Shop Eye Wear" /></a>
+
+
+</div>
+        </Marquee></div>
+
+-->
+
+		

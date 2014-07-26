@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default></default>
+	<cms_index_index>
+		<reference name="root">
+			<block type="allbrands/allbrands" name="custom_block3" template="magentothem/allbrands/allbrands.phtml" />
+		</reference>
+	</cms_index_index>
+</layout> 
